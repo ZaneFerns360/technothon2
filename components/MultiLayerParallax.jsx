@@ -17,7 +17,11 @@ export default function MultiLayerParallax() {
       ref={ref}
       className="relative grid h-screen w-full place-items-center overflow-hidden"
     >
-      <motion.div style={{ y: textY }} className="absolute inset-0 z-30">
+      <motion.div
+        style={{ y: textY }}
+        className="absolute inset-0 z-30"
+        transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
+      >
         <div className="z-21 absolute inset-0 flex items-center justify-center">
           <Image alt="GG" width={400} height={400} src="/assets/GG.png"></Image>
         </div>
@@ -25,6 +29,7 @@ export default function MultiLayerParallax() {
 
       <motion.div
         className="absolute inset-0 z-0"
+        transition={{ type: 'spring', stiffness: 0, damping: 1000 }}
         style={{
           backgroundImage: `linear-gradient(rgba(129, 208, 212, 0.5), rgba(129, 208, 212, 0.5)), url(/assets/pnggg.jpg)`,
           backgroundPosition: 'bottom',
