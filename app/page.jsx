@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <MultiLayerParallax />
       <div className="w-full bg-[#06141D]">
-        <div className="mx-auto max-w-lg space-y-4 py-24 text-neutral-300">
+        <div className="mx-auto max-w-lg space-y-4 pt-24 text-neutral-300">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
             earum nobis quasi repellat. Amet facere nulla dolorum accusantium
