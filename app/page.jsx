@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import MultiLayerParallax from '@components/MultiLayerParallax'
-
+import Video from '@components/Video'
 export default function Home() {
   return (
     <div>
@@ -51,6 +51,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <Video />
     </div>
     // <div className="relative min-h-screen bg-[#81D0D4]">
     //   <div className="absolute inset-0 bg-[#81D0D4]">
