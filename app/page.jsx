@@ -53,28 +53,5 @@ export default function Home() {
       </div>
       <Video />
     </div>
-    // <div className="relative min-h-screen bg-[#81D0D4]">
-    //   <div className="absolute inset-0 bg-[#81D0D4]">
-    //     <Image
-    //       alt="main-img"
-    //       width={1920}
-    //       height={1080}
-    //       src="/assets/pnggg.jpg"
-    //       className="opacity-50"
-    //     ></Image>
-    //   </div>
-    //   <div className="absolute inset-0 flex items-center justify-center">
-    //     <Image alt="GG" width={500} height={500} src="/assets/GG.png"></Image>
-    //   </div>
-    //   <div className="absolute bottom-0 w-full">
-    //     <Image
-    //       alt="sea-link"
-    //       width={1920}
-    //       height={1080}
-    //       src="/assets/sea-link.png"
-    //       className=""
-    //     ></Image>
-    //   </div>
-    // </div>
   )
 }
