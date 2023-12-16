@@ -21,17 +21,11 @@ dependencies:
     specifier: ^15.8.1
     version: 15.8.1
   react:
-    specifier: ^18
+    specifier: ^18.2.0
     version: 18.2.0
   react-dom:
-    specifier: ^18
+    specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  react-parallax:
-    specifier: ^3.5.1
-    version: 3.5.1(react-dom@18.2.0)(react@18.2.0)
-  react-parallax-tilt:
-    specifier: ^1.7.177
-    version: 1.7.177(react-dom@18.2.0)(react@18.2.0)
   react-vertical-timeline-component:
     specifier: ^3.6.0
     version: 3.6.0(react@18.2.0)
@@ -41,7 +35,7 @@ devDependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
   eslint:
-    specifier: ^8
+    specifier: ^8.56.0
     version: 8.56.0
   eslint-config-next:
     specifier: 14.0.4
@@ -4781,26 +4775,6 @@ packages:
       vfile: 6.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /react-parallax-tilt@1.7.177(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-BtHZFc5JESRG976/656V5ufL3lihg26vQ18L+7sNBZC1lfhR8KjIFyotAqIkZtarr3qtPseTN210prxi45g7WA==}
-    peerDependencies:
-      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /react-parallax@3.5.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-p5zPsPsqELlIOGaPS01O0IRx8R2bxcBAtrdF/RHf9nIxxk5hijbM2y89tk4rJQBcNH6ESSLe7J2NV4/ms7FLFw==}
-    peerDependencies:
-      react: 16.x.x || 17.x.x || 18.x.x
-      react-dom: 16.x.x || 17.x.x || 18.x.x
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-vertical-timeline-component@3.6.0(react@18.2.0):
