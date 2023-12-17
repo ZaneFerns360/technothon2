@@ -1,9 +1,11 @@
+'use client'
 import PropTypes from 'prop-types'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 import { styles } from '../styles.js'
 
@@ -80,6 +82,9 @@ export const Timeline = () => {
               key={`timeline-event-${index}`}
               title={event.title}
               date={event.date}
+              icon={
+                <Image src="/assets/star.jpg" alt="" height={300} width={300} />
+              }
             />
           ))}
         </VerticalTimeline>
