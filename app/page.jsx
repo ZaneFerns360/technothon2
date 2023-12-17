@@ -4,6 +4,7 @@ import Video from '@components/Video'
 import About from '@components/About'
 import StarWrapper from '@components/SectionWrapper'
 import Timeline from '@components/Timeline'
+import Accordionx from '@components/Accrodion'
 export default function Home() {
   return (
     <div>
@@ -14,9 +15,9 @@ export default function Home() {
         <StarWrapper>
           <Timeline />
         </StarWrapper>
+        <Accordionx />
         <div className="mx-auto max-w-xl space-y-4 pt-24 text-neutral-300"></div>
       </div>
-      <Video />
     </div>
   )
 }

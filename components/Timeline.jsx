@@ -36,9 +36,9 @@ const Timeline = () => {
         mode="VERTICAL_ALTERNATING"
         itemWidth={150}
         theme={{
-          primary: 'blue',
+          primary: 'white',
           secondary: 'lightblue',
-          cardBgColor: '#81D0D4',
+          cardBgColor: '#c0e7e9',
           cardForeColor: 'white',
           titleColor: 'white',
           titleColorActive: 'blue',

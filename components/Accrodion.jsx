@@ -1,67 +1,101 @@
-import React from 'react'
+'use client'
+import { Accordion } from 'flowbite-react'
 
-const Accordion = () => {
+const Accordionx = () => {
   return (
-    <div
-      id="accordion-flush"
-      data-accordion="collapse"
-      data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-      data-inactive-classes="text-gray-500 dark:text-gray-400"
-    >
-      <h2 id="accordion-flush-heading-1">
-        <button
-          type="button"
-          className="flex w-full items-center justify-between gap-3 border-b border-gray-200 py-5 font-medium text-gray-500 rtl:text-right dark:border-gray-700 dark:text-gray-400"
-          data-accordion-target="#accordion-flush-body-1"
-          aria-expanded="true"
-          aria-controls="accordion-flush-body-1"
-        >
-          <span>What is Flowbite?</span>
-          <svg
-            data-accordion-icon
-            className="h-3 w-3 shrink-0 rotate-180 transition-all duration-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-flush-body-1"
-        className="hidden"
-        aria-labelledby="accordion-flush-heading-1"
-      >
-        <div className="border-b border-gray-200 py-5 dark:border-gray-700">
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built
-            on top of Tailwind CSS including buttons, dropdowns, modals,
-            navbars, and more.
-          </p>
-          <p className="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to{' '}
-            <a
-              href="/docs/getting-started/introduction/"
-              className="text-blue-600 hover:underline dark:text-blue-500"
-            >
-              get started
-            </a>{' '}
-            and start developing websites even faster with components on top of
-            Tailwind CSS.
-          </p>
-        </div>
-      </div>
-      {/* ... Repeat for other accordion items ... */}
+    <div className="mx-auto flex items-center justify-center pt-24 sm:w-1/2">
+      <Accordion>
+        <Accordion.Panel>
+          <Accordion.Title>
+            What will be the mode of Technothon 2024?
+          </Accordion.Title>
+          <Accordion.Content>
+            Technothon 2024 will be conducted in an offline format. The event
+            will be hosted offline at V.E.S. Polytechnic College. Please refer
+            to the Reach Us section for the address.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Who is the organizer of Technothon 2024?
+          </Accordion.Title>
+          <Accordion.Content>
+            Technothon 2024 is organized by Vivekanand Education Society&apos;s
+            Polytechnic in association with VESP Alumni Association and IIC
+            Cell.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Do I need to pay any registration fees?
+          </Accordion.Title>
+          <Accordion.Content>
+            No, there are no registration fees. You just need to come with your
+            innovation; your accommodation and food during the 24-hours are all
+            on us.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>How do we form a team?</Accordion.Title>
+          <Accordion.Content>
+            All team members should be from the same college; no inter-college
+            teams are allowed. The team should be of four members and should
+            include a minimum of one female member.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Will I be getting travel reimbursement?
+          </Accordion.Title>
+          <Accordion.Content>
+            We regret to inform you that we won&apos;t be providing travel
+            reimbursement. We would be happy to provide food and accommodation
+            during the 24-hour grand finale.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Will I get anything even if I don’t win?
+          </Accordion.Title>
+          <Accordion.Content>
+            Yes, all the participants get an E-Participation Certificate along
+            with learning experience to compete in a hackathon.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>What is Blind Bet Registration?</Accordion.Title>
+          <Accordion.Content>
+            Blind Bet Registration is a unique process where teams register
+            without knowing the specific problem statements. Teams registered
+            during this period get preference in the shortlisting process. Find
+            out more in the “PROBLEM STATEMENTS” section.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            How to participate in Blind Bet Registration?
+          </Accordion.Title>
+          <Accordion.Content>
+            Form your team. Only the team leader needs to fill the Blind Bet
+            Registration Form. A unique Team ID will be sent to the team
+            leader&apos;s email. Use the Team ID to submit your idea during the
+            Idea Submission phase after problem statements are revealed in
+            January. Get preference over your competitors by participating in
+            Blind Bet Registration.
+          </Accordion.Content>
+        </Accordion.Panel>
+        <Accordion.Panel>
+          <Accordion.Title>
+            Does Blind Bet Registration guarantee shortlistment for the finale?
+          </Accordion.Title>
+          <Accordion.Content>
+            No, Blind Bet Registration does not guarantee shortlistment for the
+            finale but increases the probability of getting shortlisted.
+          </Accordion.Content>
+        </Accordion.Panel>
+      </Accordion>
     </div>
   )
 }
 
-export default Accordion
+export default Accordionx
