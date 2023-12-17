@@ -30,19 +30,21 @@ const items = [
 
 const Timeline = () => {
   return (
-    <Chrono
-      items={items}
-      mode="VERTICAL_ALTERNATING"
-      itemWidth={150}
-      theme={{
-        primary: 'blue',
-        secondary: 'lightblue',
-        cardBgColor: '#81D0D4',
-        cardForeColor: 'white',
-        titleColor: 'white',
-        titleColorActive: 'blue',
-      }}
-    />
+    <div className="max-sm:pt-36">
+      <Chrono
+        items={items}
+        mode="VERTICAL_ALTERNATING"
+        itemWidth={150}
+        theme={{
+          primary: 'blue',
+          secondary: 'lightblue',
+          cardBgColor: '#81D0D4',
+          cardForeColor: 'white',
+          titleColor: 'white',
+          titleColorActive: 'blue',
+        }}
+      />
+    </div>
   )
 }
 
