@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className="mx-auto flex h-screen w-4/6 flex-col items-center justify-center px-5 text-center max-sm:pt-36">
-      <h2 className="mb-5 text-3xl font-bold max-sm:pt-64 sm:text-7xl">
+      <h2 className="mb-5 text-3xl font-bold max-sm:pt-64 sm:pb-8 sm:text-7xl">
         About Technothon 2024⚡
       </h2>
       <div className="leading-relaxed">

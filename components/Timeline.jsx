@@ -17,7 +17,7 @@ const items = [
   {
     title: 'February 2024',
     cardTitle: 'Announcement and Webinar',
-    cardSubtitle: 'Shortlisted Teams: February 4, 2024',
+    cardSubtitle: 'Shortlisted Te1ams: February 4, 2024',
     cardDetailedText: 'Webinar with PS Setter: February 10, 2024',
   },
   {
@@ -30,11 +30,12 @@ const items = [
 
 const Timeline = () => {
   return (
-    <div className="max-sm:pt-36">
+    <div className="max-sm:pt-96">
       <Chrono
         items={items}
         mode="VERTICAL_ALTERNATING"
         itemWidth={150}
+        cardHeight={100}
         theme={{
           primary: 'white',
           secondary: 'lightblue',
