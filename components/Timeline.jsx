@@ -1,95 +1,48 @@
 'use client'
-import PropTypes from 'prop-types'
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component'
-import { motion, AnimatePresence } from 'framer-motion'
-import Image from 'next/image'
+import { Chrono } from 'react-chrono'
 
-import { styles } from '../styles.js'
+const items = [
+  {
+    title: 'December 2023',
+    cardTitle: 'Blind Bet Registration',
+    cardSubtitle: 'Starts: December 17, 2023',
+    cardDetailedText: 'Ends: December 31, 2023',
+  },
+  {
+    title: 'January 2024',
+    cardTitle: 'Release of Problem Statements & Registration',
+    cardSubtitle: 'Starts: January 2, 2024',
+    cardDetailedText: 'Idea Submission Ends: January 15, 2024',
+  },
+  {
+    title: 'February 2024',
+    cardTitle: 'Announcement and Webinar',
+    cardSubtitle: 'Shortlisted Teams: February 4, 2024',
+    cardDetailedText: 'Webinar with PS Setter: February 10, 2024',
+  },
+  {
+    title: 'February 2024',
+    cardTitle: 'Grand Finale',
+    cardSubtitle: 'Starts: February 17, 2024',
+    cardDetailedText: 'Ends & Winner Declaration: February 18, 2024',
+  },
+]
 
-import 'react-vertical-timeline-component/style.min.css'
-
-import { TimelineData } from '../constants/index.js'
-
-const TimelineEvent = ({ title, date, icon }) => (
-  <VerticalTimelineElement
-    contentStyle={{
-      background: '#1d1836',
-      color: '#fff',
-      padding: '50px',
-    }}
-    contentArrowStyle={{ borderRight: '7px solid  #232631' }}
-    date={date}
-    iconStyle={{ background: '#383E56', padding: '15px' }}
-    icon={icon}
-  >
-    <div>
-      <h3 className="text-[24px] font-bold text-white">{title}</h3>
-    </div>
-  </VerticalTimelineElement>
-)
-
-TimelineEvent.propTypes = {
-  title: PropTypes.any.isRequired,
-  date: PropTypes.any.isRequired,
-  icon: PropTypes.element.isRequired,
-}
-
-export const Timeline = () => {
-  const textVariant = (delay) => {
-    return {
-      hidden: {
-        y: -50,
-        opacity: 0,
-      },
-      show: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring',
-          duration: 1.25,
-          delay: delay,
-        },
-      },
-    }
-  }
-
+const Timeline = () => {
   return (
-    <>
-      <AnimatePresence>
-        <motion.div
-          variants={textVariant()}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-        >
-          <p className={`${styles.sectionSubText} text-center`}>
-            {' '}
-            Event Timeline
-          </p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>
-            Important Dates.
-          </h2>
-        </motion.div>
-      </AnimatePresence>
-
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {TimelineData.map((event, index) => (
-            <TimelineEvent
-              key={`timeline-event-${index}`}
-              title={event.title}
-              date={event.date}
-              icon={
-                <Image src="/assets/star.jpg" alt="" height={300} width={300} />
-              }
-            />
-          ))}
-        </VerticalTimeline>
-      </div>
-    </>
+    <Chrono
+      items={items}
+      mode="VERTICAL_ALTERNATING"
+      itemWidth={150}
+      theme={{
+        primary: 'blue',
+        secondary: 'lightblue',
+        cardBgColor: '#81D0D4',
+        cardForeColor: 'white',
+        titleColor: 'white',
+        titleColorActive: 'blue',
+      }}
+    />
   )
 }
 
