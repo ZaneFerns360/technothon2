@@ -45,7 +45,7 @@ const Timeline = () => {
       transition={{ duration: 0.5 }}
       ref={ref2}
     >
-      <div className="max-sm:pt-96">
+      <div className="max-sm:pt-36">
         <h3 className="pb-4 text-center text-3xl font-bold text-white">
           Timeline
         </h3>
