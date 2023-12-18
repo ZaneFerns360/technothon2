@@ -50,12 +50,14 @@ const Timeline = () => {
           Timeline
         </h3>
         <Chrono
+          slideItemDuration={800}
+          slideShow
           items={items}
           mode="VERTICAL_ALTERNATING"
           itemWidth={150}
           cardHeight={100}
           theme={{
-            primary: 'white',
+            primary: 'blue',
             secondary: 'yellow',
             cardBgColor: '#c0e7e9',
             cardForeColor: 'white',
