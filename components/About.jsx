@@ -1,29 +1,50 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 const About = () => {
+  const [ref1, inView1] = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  })
+
+  const variants = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0.65 },
+  }
+
   return (
-    <div className="mx-auto flex h-screen w-4/6 flex-col items-center justify-center px-5 text-center max-sm:pt-36">
-      <h2 className="mb-5 text-3xl font-bold max-sm:pt-64 sm:pb-8 sm:text-7xl">
-        About Technothon 2024⚡
-      </h2>
-      <div className="leading-relaxed">
-        <p className="mb-5 text-2xl sm:text-3xl">
-          {
-            'Mumbai polytechnic students, get ready for Technothon 2024! A 24-hour hackathon full of excitement and creativity.'
-          }
-        </p>
-        <p className="mb-5 text-2xl sm:text-3xl">
-          {
-            'Technothon is your chance to shine as a developer. Build from scratch, compete, and unlock your potential. Are you up for the challenge?'
-          }
-        </p>
-        <p className="text-2xl sm:text-3xl">
-          {
-            'This year, we introduce Blind Bet Registration! Register, discover your challenges on the spot, and embark on an exciting journey at Technothon 2024.'
-          }
-        </p>
+    <motion.div
+      animate={inView1 ? 'visible' : 'hidden'}
+      variants={variants}
+      exit="hidden"
+      transition={{ duration: 0.5 }}
+      ref={ref1}
+    >
+      <div className="mx-auto flex h-screen w-4/6 flex-col items-center justify-center px-5 text-center max-sm:pt-36">
+        <h2 className="mb-5 text-3xl font-bold max-sm:pt-64 sm:pb-8 sm:text-7xl">
+          About Technothon 2024⚡
+        </h2>
+        <div className="leading-relaxed">
+          <p className="mb-5 text-2xl sm:text-3xl">
+            {
+              'Mumbai polytechnic students, get ready for Technothon 2024! A 24-hour hackathon full of excitement and creativity.'
+            }
+          </p>
+          <p className="mb-5 text-2xl sm:text-3xl">
+            {
+              'Technothon is your chance to shine as a developer. Build from scratch, compete, and unlock your potential. Are you up for the challenge?'
+            }
+          </p>
+          <p className="text-2xl sm:text-3xl">
+            {
+              'This year, we introduce Blind Bet Registration! Register, discover your challenges on the spot, and embark on an exciting journey at Technothon 2024.'
+            }
+          </p>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
