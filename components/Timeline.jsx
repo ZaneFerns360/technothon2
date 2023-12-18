@@ -2,6 +2,7 @@
 import { Chrono } from 'react-chrono'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useEffect, useRef } from 'react'
 
 const items = [
   {
@@ -37,6 +38,15 @@ const Timeline = () => {
     hidden: { opacity: 0, scale: 0.65 },
   }
 
+  useEffect(() => {
+    if (inView2) {
+      const button = document.querySelector('button[title="Play Slideshow"]')
+      if (button) {
+        button.click()
+      }
+    }
+  }, [inView2])
+
   return (
     <motion.div
       animate={inView2 ? 'visible' : 'hidden'}
@@ -50,7 +60,7 @@ const Timeline = () => {
           Timeline
         </h3>
         <Chrono
-          slideItemDuration={800}
+          slideItemDuration={1000}
           slideShow
           items={items}
           mode="VERTICAL_ALTERNATING"
