@@ -3,7 +3,7 @@ import { Accordion } from 'flowbite-react'
 
 const Accordionx = () => {
   return (
-    <div className="mx-auto flex items-center justify-center pt-24 max-sm:px-5 sm:w-1/2">
+    <div className="mx-auto flex items-center justify-center pt-10 max-sm:px-5 sm:w-1/2">
       <Accordion collapseAll className="min-w-[80%]">
         <Accordion.Panel>
           <Accordion.Title>

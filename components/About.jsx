@@ -22,8 +22,8 @@ const About = () => {
       transition={{ duration: 0.7 }}
       ref={ref1}
     >
-      <div className="mx-auto flex w-4/6 flex-col  items-center justify-center px-5 text-center max-sm:h-fit md:pb-24 md:pt-48">
-        <h2 className="mb-5 text-4xl font-bold max-sm:pt-64 sm:pb-8 sm:text-7xl">
+      <div className="mx-auto flex w-4/6 flex-col  items-center justify-center text-center max-sm:h-fit md:px-5 md:pb-24 md:pt-48">
+        <h2 className="mb-5 text-4xl font-bold max-sm:pt-20 sm:pb-8 sm:text-7xl">
           About Technothon 2024⚡
         </h2>
         <div className="leading-relaxed">

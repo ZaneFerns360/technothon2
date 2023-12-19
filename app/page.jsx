@@ -7,6 +7,7 @@ import Timeline from '@components/Timeline'
 import Accordionx from '@components/Accrodion'
 import ContactUs from '@components/Contact'
 import Container from '@components/Container'
+import Guidelines from '@components/Guidelines'
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
         <StarWrapper>
           <Timeline />
         </StarWrapper>
-        <Accordionx />
+        <Guidelines />
         <ContactUs />
+        <Accordionx />
         <Container />
         <div className="mx-auto max-w-xl space-y-4 pt-24 text-neutral-300"></div>
       </div>

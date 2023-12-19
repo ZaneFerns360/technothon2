@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function ContactUs() {
   return (
-    <div className="pt-24 md:px-4">
+    <div className="pt-10 md:px-4">
       {' '}
       <div className="m-4 flex flex-col justify-between rounded-lg bg-blue-600 p-4 md:flex-row">
         <div className="w-full p-4 md:w-1/2">
