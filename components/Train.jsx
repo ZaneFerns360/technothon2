@@ -18,7 +18,7 @@ const Train = () => {
       >
         <div className="w-full">
           {' '}
-          <Image alt="train" height={200} width={200} src="/assets/train.png" />
+          <Image alt="train" height={300} width={300} src="/assets/train.png" />
         </div>
       </motion.div>
     </div>

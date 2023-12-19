@@ -60,7 +60,7 @@ const Timeline = () => {
           Timeline
         </h3>
         <Chrono
-          slideItemDuration={1000}
+          slideItemDuration={1200}
           slideShow
           items={items}
           mode="VERTICAL_ALTERNATING"

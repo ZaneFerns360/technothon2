@@ -19,7 +19,7 @@ const About = () => {
       animate={inView1 ? 'visible' : 'hidden'}
       variants={variants}
       exit="hidden"
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       ref={ref1}
     >
       <div className="mx-auto flex w-4/6 flex-col  items-center justify-center px-5 text-center max-sm:h-fit md:pb-24 md:pt-48">

@@ -6,6 +6,7 @@ import StarWrapper from '@components/SectionWrapper'
 import Timeline from '@components/Timeline'
 import Accordionx from '@components/Accrodion'
 import ContactUs from '@components/Contact'
+import Container from '@components/Container'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </StarWrapper>
         <Accordionx />
         <ContactUs />
+        <Container />
         <div className="mx-auto max-w-xl space-y-4 pt-24 text-neutral-300"></div>
       </div>
     </div>
