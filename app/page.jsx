@@ -5,6 +5,8 @@ import About from '@components/About'
 import StarWrapper from '@components/SectionWrapper'
 import Timeline from '@components/Timeline'
 import Accordionx from '@components/Accrodion'
+import ContactUs from '@components/Contact'
+
 export default function Home() {
   return (
     <div>
@@ -16,6 +18,7 @@ export default function Home() {
           <Timeline />
         </StarWrapper>
         <Accordionx />
+        <ContactUs />
         <div className="mx-auto max-w-xl space-y-4 pt-24 text-neutral-300"></div>
       </div>
     </div>
